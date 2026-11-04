@@ -1,0 +1,254 @@
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.recipe-nav {
+    padding: 30px 50px;
+    font-size: 12px;
+}
+
+.recipe-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.recipe-nav a:first-child {
+    color: #c95e24;
+}
+
+.recipe-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+.recipe-header p {
+    color: #c95e24;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.recipe-header h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.recipe-header strong {
+    font-weight: bold;
+}
+
+
+.recipe-info {
+    display: flex;
+    gap: 70px;
+    margin-top: 40px;
+    font-size: 14px;
+    grid-column: 1;
+}
+
+.recipe-info p {
+    margin: 0;
+}
+
+.ingredients {
+    margin-top: 40px;
+    grid-column: 1;
+}
+
+.ingredients h2 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ingredients ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-auto-flow: column;
+    gap: 8px 30px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.recipe-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.recipe-image {
+    margin-top:-150px;
+}
+
+.recipe-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.recipe-buttons button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.recipe-buttons iconify-icon {
+    font-size: 22px;
+}
+
+.recipe-instructions {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.recipe-instructions h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.recipe-instructions hr {
+    border: none;
+    border-top: 1px solid #888;
+    margin-bottom: 30px;
+}
+
+.recipe-instructions ol {
+    max-width: 850px;
+    padding-left: 20px;
+}
+
+.recipe-instructions li {
+    color: white;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.recipe-bonus {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.recipe-bonus h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.recipe-bonus hr {
+    border: none;
+    border-top: 1px solid gray;
+}
+
+.bonus-instructions ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+}
+
+.bonus-instructions li {
+    counter-increment: step;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.bonus-instructions li::before {
+    content: "STEP " counter(step);
+    color: #e65c00;
+    font-size: 12px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    flex-shrink: 0;
+}
+
+.bonus-ingredients ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.bonus-ingredients li {
+    font-size: 14px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #c95e24;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 30px;
+  padding: 35px 70px;
+  color: #222;
+  font-size: 12px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  border-left: 1px solid white;
+  padding-left: 30px;
+  text-align: right;
+}
+
+.spotify-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.spotify-link iconify-icon {
+  font-size: 18px;
+  color: #222;
+}
+
+.footer-energy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.footer-energy iconify-icon {
+  font-size: 22px;
+  color: #222;
+  flex-shrink: 0;
+}
+
+.footer-energy p {
+  font-size: 11px;
+  max-width: 180px;
+  margin: 0;
+}
