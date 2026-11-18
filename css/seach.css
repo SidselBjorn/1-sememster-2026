@@ -23,6 +23,11 @@ body {
     max-width: 1100px;
     margin: 80px auto;
     padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
 }
 
 .search-box {
@@ -75,4 +80,101 @@ body {
     font-weight: normal;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+.category-options {
+    display: flex;
+    gap: 60px;
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-column label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.category-column input {
+    accent-color: #c95e24;
+}
+
+.search-results {
+    max-width: 900px;
+    margin: 50px auto 150px 120px;
+    padding: 0 50px;
+    border-top: none;
+}
+
+.search-result:first-child {
+    border-top: 1px solid #444;
+}
+
+.search-result {
+    padding: 30px 0;
+    border-bottom: 1px solid #444;
+}
+
+.result-category {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.result-category.seafood {
+    color: #8b5cf6;
+}
+
+.result-category.chicken {
+    color: #2dd4bf;
+}
+
+.search-result h2 {
+    color: #c95e24;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.result-description {
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* MOBILVERSION */
+@media (max-width: 768px) {
+
+    .search-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .search-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .category-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-results {
+        max-width: 100%;
+        margin: 40px 20px 80px;
+        padding: 0;
+    }
+
+    .search-result {
+        padding: 25px 0;
+    }
+
 }

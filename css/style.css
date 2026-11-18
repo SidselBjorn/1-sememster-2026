@@ -497,6 +497,8 @@ cursor: pointer;
     .todays_recipes_headline {
         font-size: 30px;
     }
+
+    
 }
 
 .kitchen {
@@ -600,4 +602,49 @@ cursor: pointer;
   font-size: 11px;
   max-width: 180px;
   margin: 0;
+}
+
+/* MOBILE VERSION - FORSIDE */
+
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+
+    .hero {
+        min-height: 500px;
+        background-position: center;
+    }
+
+    .hero-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero-text {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 160px;
+    }
+
+    .hero-text h4 {
+        font-size: 26px;
+    }
+
+    .hero-search {
+        grid-column: 1;
+        grid-row: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
 }
